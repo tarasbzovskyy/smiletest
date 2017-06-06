@@ -1,0 +1,156 @@
+
+
+/* ==========================================================================
+   Smile Shop custom styles
+   ========================================================================== */
+
+
+/*@font-face {*/
+    /*font-family: "ProximaNova";*/
+    /*src: url('../fonts/proximanova-regular-webfont.ttf');*/
+    /*font-weight: 400;*/
+    /*font-style: normal;*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: "ProximaNova";*/
+    /*src: url('../fonts/proximanova-bold-webfont.ttf');*/
+    /*font-weight: 600;*/
+    /*font-style: normal;*/
+/*}*/
+
+
+
+body * {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+}
+
+header {
+    background-color:#eff0f3;
+}
+
+header .navbar{
+    margin-bottom:0;
+    border:none;
+}
+
+header .nav>li>a {
+    padding-left:0;
+    padding-right:0;
+    margin:0 18px;
+}
+.main-nav {
+    position:relative;
+    left:-15px;
+}
+
+header .navbar a {
+    color:#777777;
+}
+
+header .navbar a:hover {
+    color: #333333;
+    background-color:transparent;
+}
+.navbar-center {
+    margin-left:2%;
+}
+.navbar-center.site-lang{
+    margin-left:4%;
+}
+.site-lang .active a {
+    position:relative;
+    overflow:hidden;
+    color: #333333;
+}
+
+.site-lang .active a:before {
+    content: '';
+    width:100%;
+    height:2px;
+    background:#fb2539;
+    position:absolute;
+    bottom:0;
+}
+.client-city li.dropdown {
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+}
+.nav li.sign-in  a{
+    color:#fb2539;
+}
+.navbar-center.nav>li>a {
+    margin:0 10px;
+}
+.navbar-brand {
+    background: #ffdc2c;
+    height:auto;
+    padding:32px 15px 23px;
+}
+
+/*Removing all outlines*/
+
+.btn-default, button {
+    outline: none !important;
+    box-shadow: none !important;
+    background-image: none !important;
+}
+
+button,input, textarea, select, a {
+    outline: none !important;
+}
+
+button:focus,  textarea:focus, select:focus {
+    outline: none;
+}
+
+input:focus, textarea:focus, select:focus, input:active, textarea:active, select:active, .selected-flag:active, .selected-flag:focus {
+    outline: none;
+    box-shadow: 0 0 6px #e0e0e0!important;
+    -webkit-box-shadow: 0 0 6px #e0e0e0!important;
+    -moz-box-shadow: 0 0 6px #e0e0e0!important;
+}
+
+.user-side nav > div  {
+    height:112px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+}
+.user-side nav  ul {
+    margin:0 10px;
+}
+.search-section {
+    width:33%;
+}
+.search-section .form-control {
+    font-size:13px;
+    height:auto;
+    padding:18px 26px 18px 24px;
+    border-radius:60px;
+    border-color:#c2c2c2;
+    width:100%;
+}
+.input-group-btn .glyphicon {
+    font-size:16px;
+    z-index:2;
+}
+.input-group-btn {
+    position:absolute;
+    top:40%;
+    right:30px;
+}
+
+.search-section form >div {
+    position:relative;
+}
+.search-section form {
+    padding:0;
+}
