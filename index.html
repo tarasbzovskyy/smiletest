@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="css/responsive.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -27,7 +26,7 @@
     <div class="container">
         <nav class="navbar">
             <div class="container-fluid">
-                <ul class="navbar-left nav navbar-nav main-nav">
+                <ul class="navbar-left nav navbar-nav top-nav">
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Магазины</a></li>
                     <li><a href="#">О нас</a></li>
@@ -51,7 +50,7 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="sign-in"><a href="#"><span class="glyphicon glyphicon-user "></span>Вход</a></li>
+                    <li class="sign-in"><a href="#"><span class="menu-icon"></span>Вход</a></li>
                     <li><a href="#"></span>Регистрация</a></li>
                 </ul>
             </div>
@@ -86,19 +85,32 @@
                     </form>
                 </ul>
                 <ul class="nav navbar-nav">
-                    <li>0-800-30-15-85<span class="caret"></span></li>
-                    <li><button>Обратный звонок</button></li>
+                    <li class="phone-number">0-800-30-15-85<span class="caret"></span></li>
+                    <li><button class="btn btn-warning btn-call">Обратный звонок</button></li>
                 </ul>
-                <ul id="menu-main-menu" class="nav navbar-nav">
-                    <li class="menu-item user-dashboard"><a href="https://app.cms2cms.com/dashboard">Гараж</a></li>
-                    <li class="menu-item user-balance"><a href="https://app.cms2cms.com/profile#billing"><span>$</span>Избраное</a></li>
-                    <li class="menu-item user-name"><a href="https://app.cms2cms.com/profile">Сравнение</a></li>
-                    <li class="menu-item user-logout"><a href="https://app.cms2cms.com/auth/logout">Корзина</a></li>
+                <ul class="nav navbar-nav user-menu">
+                    <li class="menu-item"><a href="#"><span class="menu-icon user-garage"></span>Гараж</a></li>
+                    <li class="menu-item"><a href="#"><i class="likes">1</i><span class="menu-icon user-bookmark"></span>Избраное</a></li>
+                    <li class="menu-item"><a href="#"><span class="menu-icon user-compare"></span>Сравнение</a></li>
+                    <li class="menu-item"><a href="#"><span class="menu-icon user-basket"></span>Корзина</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 </section>
+
+<section class="main-menu">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li class="menu-item"><a href="#">Каталог товаров<span class="menu-icon goods"></span></a></li>
+            <li class="menu-item"><a href="#"><span class="menu-icon sales"></span>Акции</a></li>
+            <li class="menu-item"><a href="#"><span class="menu-icon compare-tests"></span>Сравнительные тесты</a></li>
+            <li class="menu-item"><a href="#"><span class="menu-icon how-choose"></span>Как выбрать</a></li>
+            <li class="menu-item"><a href="#"><span class="menu-icon news"></span>Новости</a></li>
+        </ul>
+    </div>
+</section>
+
 
 
 
