@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -112,8 +113,6 @@
     </div>
 </section>
 
-
-
 <section class="good-wrap row">
     <div class="container">
         <div class="breadcrumbs">
@@ -171,9 +170,9 @@
                     <span class="question"><i class="interface small"></i>3 вопроса</span>
 
                 </div>
-                <div class="row">
+                <div class="row full-height space-top-30">
                     <div class="col-md-7">
-                        <div class="description-block not-available space-top-30">
+                        <div class="description-block not-available full-height-block">
                             <div class="product-price space-bottom-15">
                                 456<span>грн</span>
                             </div>
@@ -190,11 +189,185 @@
                     </div>
 
                     <div class="col-md-5">
+                        <div class="similar-product full-height-block">
+                            <h4 class="title center-block">Похожий товар</h4>
+                            <img class="image center-block space-bottom-15" src="img/product-similar.png"/>
+                            <div class="similar-description">
+                                <span class="presents"><i class="interface small"></i>В наличии</span>
+                                <p class="space-top">Трансмиссионное масло CASTRO Manual EP 80W-90 1л</p>
+                                <div class="product-price space-bottom-15">
+                                    345<span>грн</span>
+                                </div>
+                            </div>
+                            <div class="show-similar">
+                                <a href="#">Показать все похожие товары</a>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
 
             </div>
+            <div class="clearfix"></div>
+            <div class="similar-slider row product-slider space-bottom-15 space-top-30">
+                <div class="slider-title space-bottom-15">
+                    <h3 class="title pull-left">Похожие товары</h3>
+                    <div class="slider-nav pull-right space-top-20">
+                        <div class="prev"><span class="interface bigger"></span></div>
+                        <div class="next"><span class="interface bigger"></span></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <ul class="slides">
+                    <li>
+                        <div class="sale">Скидка -10%</div>
+                        <img class="image" src="img/oil8.jpg"/>
+                        <div class="similar-info">
+                            <div class="product-id space-top space-bottom">Код товара: 39207</div><span class="presents"><i class="interface small"></i>В наличии</span>
+                            <p>Моторное масло Castrol Magnatec 10W-40 A3/B4 4л</p>
+                            <div class="product-price space-bottom-15">
+                                104<span>грн</span> <span class="old-price"><span>125</span>грн</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="image" src="img/oil6.jpg"/>
+                        <div class="similar-info">
+                            <div class="product-id space-top space-bottom">Код товара: 39207</div><span class="presents"><i class="interface small"></i>В наличии</span>
+                            <p>Моторное масло Shell Helix HX7 10W-40 4л</p>
+                            <div class="product-price space-bottom-15">
+                                456<span>грн</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="image" src="img/oil5.jpg"/>
+                        <div class="similar-info">
+                            <div class="product-id space-top space-bottom">Код товара: 39207</div><span class="finishing">Заканчивается</span>
+                            <p>Моторное масло Mobil Super 3000 X1 5W-40 4л</p>
+                            <div class="product-price space-bottom-15">
+                                268<span>грн</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="image" src="img/oil4.jpg"/>
+                        <div class="similar-info">
+                            <div class="product-id space-top space-bottom">Код товара: 39207</div><span class="presents"><i class="interface small"></i>В наличии</span>
+                            <p>Моторное масло Castrol Magnatec 10W-40 A3/B4 4л</p>
+                            <div class="product-price space-bottom-15">
+                                104<span>грн</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="image" src="img/oil9.jpg"/>
+                        <div class="similar-info">
+                            <div class="product-id space-top space-bottom">Код товара: 39207</div><span class="presents"><i class="interface small"></i>В наличии</span>
+                            <p>Моторное масло Shell Helix HX7 10W-40 4л</p>
+                            <div class="product-price space-bottom-15">
+                                456<span>грн</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="image" src="img/oil5.jpg"/>
+                        <div class="similar-info">
+                            <div class="product-id space-top space-bottom">Код товара: 39207</div><span class="presents"><i class="interface small"></i>В наличии</span>
+                            <p>Моторное масло Mobil Super 3000 X1 5W-40 4л</p>
+                            <div class="product-price space-bottom-15">
+                                268<span>грн</span>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="row space-bottom-15 space-top-30">
+                <div class="col-md-8">
+                    <div class="product-tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab1">Характеристики</a></li>
+                            <li><a data-toggle="tab" href="#tab2">Оп исание</a></li>
+                            <li><a data-toggle="tab" href="#tab3">Отзывы и вопросы (40)</a></li>
+                            <li><a data-toggle="tab" href="#tab4">Видеообзоры и статьи</a></li>
+                            <li><a data-toggle="tab" href="#tab5">Сертификаты</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="tab1" class="tab-pane fade in active">
+                                <h2>Характеристики товара</h2>
+                                <div class="character">
+                                    <div class="char-title row">
+                                        <div class="col-md-7">Класс вязкости:</div>
+                                        <div class="col-md-5">5W-40</div>
+                                    </div>
+                                    <div class="char-title row">
+                                        <div class="col-md-7">сСт при 40ºC:</div>
+                                        <div class="col-md-5">84</div>
+                                    </div>
+                                    <div class="char-title row">
+                                        <div class="col-md-7">сСт при 100ºC:</div>
+                                        <div class="col-md-5">14</div>
+                                    </div>
+                                    <div class="char-title row">
+                                        <div class="col-md-7">Зольность сульфатная, % мас., ASTM D 874:</div>
+                                        <div class="col-md-5">0,0095</div>
+                                    </div>
+                                    <div class="char-title row">
+                                        <div class="col-md-7">Содержание фосфора:</div>
+                                        <div class="col-md-5">0.0095</div>
+                                    </div>
+                                    <div class="char-title row">
+                                        <div class="col-md-7">Температура вспышки, ºC, ASTM D 92:</div>
+                                        <div class="col-md-5">222</div>
+                                    </div>
+                                    <div class="char-title row">
+                                        <div class="col-md-7">Температура застывания, ºC, ASTM D 97:</div>
+                                        <div class="col-md-5">-39</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab2" class="tab-pane fade">
+                                <h3>Menu 1</h3>
+                                <p>Some content in menu 1.</p>
+                            </div>
+                            <div id="tab3" class="tab-pane fade">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#in-tab1">Отзывы</a></li>
+                                    <li><a data-toggle="tab" href="#in-tab2">Воппросы</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="in-tab1" class="tab-pane fade in active">
+                                        <h3>HOME</h3>
+                                        <p>Some content.</p>
+                                    </div>
+                                    <div id="in-tab2" class="tab-pane fade">
+                                        <h3>Menu 1</h3>
+                                        <p>Some content in menu 1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab4" class="tab-pane fade">
+                                <h3>Menu 2</h3>
+                                <p>Some content in menu 2.</p>
+                            </div>
+                            <div id="tab5" class="tab-pane fade">
+                                <h3>Menu 2</h3>
+                                <p>Some content in menu 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -224,6 +397,7 @@
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
 
         <script src="js/main.js"></script>
     </body>
