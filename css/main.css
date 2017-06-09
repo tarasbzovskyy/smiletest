@@ -59,6 +59,11 @@ h3 {
 h2 {
     font-size:20px;
 }
+h5 {
+    font-size:16px;
+    margin:5px 0;
+    display:inline-block;
+}
 header {
     background-color:#eff0f3;
 }
@@ -705,4 +710,114 @@ i.interface.bigger, span.interface.bigger {
 }
 .char-title:nth-child(odd) {
     background-color:#eff0f3;
+}
+.swiper {
+    position:relative;
+}
+.collapse-block {
+    padding:15px 0;
+    width:100%;
+    position:absolute;
+    bottom:-55px;
+    left:0;
+    background-color:#fff;
+    z-index:2;
+    text-decoration:underline;
+    cursor:pointer;
+}
+.collapse-block.rotate .interface {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.collapse-block .interface {
+    background-position: 2px -82px;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    transition-delay:.3s;
+    margin-right:5px;
+}
+.tab-content h2 {
+    margin-top:30px;
+    margin-bottom:15px;
+}
+.feedbacks .nav-tabs {
+    border:none;
+}
+.feedbacks .nav-tabs li {
+    border:1px solid #e1e1e1;
+    text-align:center;
+}
+.feedbacks .nav-tabs li.active {
+    border:1px solid #fb2539;
+}
+.feedbacks .nav-tabs li a:hover,
+.feedbacks .nav-tabs > li.active >a:hover,
+.feedbacks .nav-tabs li a,
+.feedbacks .nav-tabs > li.active a:focus,
+.feedbacks .nav-tabs li.active a {
+    padding:8px 40px;
+    border:none;
+    margin:0;
+}
+.feedbacks .nav-tabs li.active a {
+    color: #333333;
+    font-weight:800;
+}
+
+.buttons-block {
+    position:relative;
+}
+.btn.btn-feed {
+    font-size:15px;
+    background-color:#ffdc2c;
+    border:1px solid #ffdc2c;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.btn.btn-feed:hover {
+    background-color: #fff;
+
+}
+.feedbacks h5{margin-right:20px; font-weight:800;}
+.date {color:#999999}
+.feed .description {
+    border-right:1px solid #e9eaeb;
+    padding-left:20px;
+}
+.benefits {
+    color: #57ae85;
+}
+.shortcomings {
+    color:#f8727e;
+}
+.like {
+    margin-right:5px;
+    background-position: 4px -318px;
+}
+.dislike {
+    background-position: 8px -282px;
+}
+.interface.bigger.like,.interface.bigger.dislike  {
+    padding-left:15px;
+    width: 40px;
+    height:18px;
+    text-align:right;
+
+}
+.feedbacks-blocks .feed  {
+    border:1px solid #ffdc2c;
+    padding:30px 10px;
+}
+.feed.row {
+    margin:0;
+}
+.description .feedback:first-child {
+    margin-right:15px;
 }
