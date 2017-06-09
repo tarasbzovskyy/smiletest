@@ -909,3 +909,21 @@ i.interface.bigger, span.interface.bigger {
 .article .full-height-two {
     display: flex;
 }
+
+.current-product .product-price,.current-product p  {
+    color:#777777;
+}
+.current-product .product-price {
+    font-size:30px;
+}
+.current-product .show-similar a{
+    color:#333333;
+}
+.current-product .show-similar {
+    position:static;
+}
+.current-product .btn {
+    width:145px;
+    white-space: normal;
+    line-height:1;
+}
