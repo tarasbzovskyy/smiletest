@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/flexslider.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/ekko-lightbox.min.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -191,7 +192,7 @@
                     <div class="col-md-5">
                         <div class="similar-product full-height-block">
                             <h4 class="title center-block">Похожий товар</h4>
-                            <img class="image center-block space-bottom-15" src="img/product-similar.png"/>
+                            <img class="center-block space-bottom-15" src="img/product-similar.png"/>
                             <div class="similar-description">
                                 <span class="presents"><i class="interface small"></i>В наличии</span>
                                 <p class="space-top">Трансмиссионное масло CASTRO Manual EP 80W-90 1л</p>
@@ -297,7 +298,7 @@
                             <li><a data-toggle="tab" href="#tab5">Сертификаты</a></li>
                         </ul>
 
-                        <div class="tab-content">
+                        <div class="tab-content product-tab">
                             <div id="tab1" class="tab-pane swiper fade in active">
                                 <h2>Характеристики товара</h2>
                                 <div class="collapse-block"><span class="interface small"></span>Показать все характеристики</div>
@@ -368,7 +369,7 @@
                                 </div>
 
                             </div>
-                            <div id="tab3" class="tab-pane feedbacks fade">
+                            <div id="tab3" class="tab-pane swiper feedbacks fade">
                                 <div class="buttons-block space-bottom-30">
                                     <ul class="nav nav-tabs space-top-30">
                                         <li class="active"><a data-toggle="tab" href="#in-tab1">Отзывы (10)</a></li>
@@ -540,44 +541,107 @@
                                         </div>
                                     </div>
                                     <div id="in-tab2" class="tab-pane fade">
-                                        <div class="feed row">
-                                            <div class="col-md-9 description">
-                                                <div class="title space-bottom-15"><h5>Панас</h5><span class="date">04.07.16</span></div>
-                                                <p>У Huawei краща основна камра ніж в Lenovo при тому, що Lenovo ніколи не були
-                                                    сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і,
-                                                    як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи.
-                                                    До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo.
-                                                    Захист від бризг у Р1m є скоріше
-                                                </p>
-                                                <p><span class="benefits space-top-15">Достоинства: </span>хорошая батарея, и вообще неплохой смартфон</p>
-                                                <p><span class="shortcomings space-top-15">Недостатки: </span>не обнаружены</p>
-                                                <div class="row space-top-15">
-                                                    <div class="col-md-5">
-                                                        <span class="feedback">1 ответ</span>
-                                                        <span class="feedback">Ответить</span>
+                                        <div class="feedbacks-blocks">
+                                            <div class="feed row">
+                                                <div class="col-md-9 description">
+                                                    <div class="title space-bottom-15"><h5>Панас</h5><span class="date">04.07.16</span></div>
+                                                    <p>У Huawei краща основна камра ніж в Lenovo при тому, що Lenovo ніколи не були
+                                                        сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і,
+                                                        як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи.
+                                                        До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo.
+                                                        Захист від бризг у Р1m є скоріше
+                                                    </p>
+                                                    <p><span class="benefits space-top-15">Достоинства: </span>хорошая батарея, и вообще неплохой смартфон</p>
+                                                    <p><span class="shortcomings space-top-15">Недостатки: </span>не обнаружены</p>
+                                                    <div class="row space-top-15">
+                                                        <div class="col-md-5">
+                                                            <span class="feedback">1 ответ</span>
+                                                            <span class="feedback">Ответить</span>
+                                                        </div>
+                                                        <div class="col-md-7">Был ли вам полезен этот отзыв: <span class="benefits like interface bigger">14</span> <span class="shortcomings dislike interface bigger">5</span></div>
                                                     </div>
-                                                    <div class="col-md-7">Был ли вам полезен этот отзыв: <span class="benefits like interface bigger">14</span> <span class="shortcomings dislike interface bigger">5</span></div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3 rate">
-                                                <h5 class="space-bottom">Оценка</h5>
-                                                <div class="product-rate">
-                                                    <i class="interface small good"></i>
-                                                    <i class="interface small good"></i>
-                                                    <i class="interface small good"></i>
-                                                    <i class="interface small good"></i>
-                                                    <i class="interface small bad"></i>
-                                                    4.0
+                                                <div class="col-md-3 rate">
+                                                    <h5 class="space-bottom">Оценка</h5>
+                                                    <div class="product-rate">
+                                                        <i class="interface small good"></i>
+                                                        <i class="interface small good"></i>
+                                                        <i class="interface small good"></i>
+                                                        <i class="interface small good"></i>
+                                                        <i class="interface small bad"></i>
+                                                        4.0
+                                                    </div>
                                                 </div>
                                             </div>
                                             </div>
                                     </div>
                                 </div>
                             </div>
+
+
                             <div id="tab4" class="tab-pane fade">
-                                <h3>Menu 2</h3>
-                                <p>Some content in menu 2.</p>
+                                <h2>Характеристики товара</h2>
+                                <div class="video-block">
+                                    <div class="col-md-6 video-bl">
+                                        <a data-type="youtube" class="video-modal" data-toggle="lightbox" href="//www.youtube.com/watch?v=VbTy3CVgHYWM">
+                                            <img class="image" src="img/vid1.jpg"/>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-6 video-bl">
+                                            <a data-toggle="lightbox" class="video-modal" href="//www.youtube.com/watch?v=VepeQJDBEek">
+                                                <img class="image" src="img/vid2.jpg"/>
+                                            </a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="article-slide">
+                                   <div class="xz">
+                                       <div class="slide">
+                                           <div class="row article-block full-height-two">
+                                               <div class="col-md-4">
+                                                   <div class="full-height-block">
+                                                       <img src="img/art1.jpg"/>
+                                                   </div>
+                                               </div>
+                                               <div class="col-md-6">
+                                                   <div class="full-height-block art-description">
+                                                       <div class="similar-info space-bottom-15 "><span class="product-id">16 августа 2016</span></div>
+                                                       <h2>Подробный обзор и выявление
+                                                           недостатков навигатора
+                                                           DriveAssist 50LMT</h2>
+                                                       <p>Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ...</p>
+                                                   </div>
+                                               </div>
+
+                                           </div>
+                                       </div>
+                                   </div>
+                                    <div class="xz">
+                                        <div class="slide">
+                                            <div class="row article-block full-height-two">
+                                                <div class="col-md-4">
+                                                    <div class="full-height-block">
+                                                        <img src="img/art2.jpg"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="full-height-block art-description">
+                                                        <div class="similar-info space-bottom-15 "><span class="product-id">16 августа 2016</span></div>
+                                                        <h2>Подробный обзор и выявление
+                                                            недостатков навигатора
+                                                            DriveAssist 50LMT</h2>
+                                                        <p>Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ...</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+
                             <div id="tab5" class="tab-pane fade">
                                 <h3>Menu 2</h3>
                                 <p>Some content in menu 2.</p>
@@ -621,7 +685,8 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/jquery.flexslider-min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
-
+        <script src="js/ekko-lightbox.min.js"></script>
         <script src="js/main.js"></script>
+
     </body>
 </html>

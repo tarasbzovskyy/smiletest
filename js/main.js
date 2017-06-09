@@ -1,14 +1,14 @@
 (function($){
-    function productSlider(target){
+    function productSlider(target,items, margin, responsive){
         var slider = target;
         slider.owlCarousel({
-            items:5,
-            margin:10,
+            items:items,
+            margin:margin,
             nav:false,
             touchDrag:true,
             dots:false,
             // navSpeed:1000,
-            responsiveClass:true,
+            responsiveClass:responsive,
             // responsiveRefreshRate:1000,
             responsive:{
                 0:{
@@ -80,9 +80,25 @@
         })
     }
 
-    $( document ).ready(function() {
+    var activeLightbox = function (){
+        // delegate calls to data-toggle="lightbox"
+        jQuery(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+            event.preventDefault();
+            return jQuery(this).ekkoLightbox({
+                always_show_close: true,
+                gallery_parent_selector: '.gallery',
+                right_arrow_class: '.flex-prev',
+                left_arrow_class: '.flex-next'
+            });
+        });
+    };
 
-        $(".product-tabs .tab-pane").addClass('active');
+    $( document ).ready(function() {
+        $(".product-tabs > .product-tab .tab-pane").addClass('active');
+
+        $('.modal').modal();
+
+        activeLightbox();
     }); //end ready
 
 
@@ -107,7 +123,9 @@
                 sync: ".product-photo-thumbs"
             });
 
-        productSlider($(".product-slider .slides"));
+        productSlider($(".product-slider .slides"),3,10,true);
+
+        productSlider($(".article-slide"),5, 0,false);
 
         collapser($('.character'),5,true);
         if ($('#tab2').hasClass('active')) {
@@ -117,6 +135,19 @@
             collapser($('#tab3 .feedbacks-blocks'),3,true);
         }
 
+        $(".product-tabs > .product-tab > .tab-pane").not(':first').removeClass('active');
+
+ var ss = {
+     "@context": "http://schema.org",
+     "@type": "Person",
+     "name": "Steve Kreynin",
+     "url": "https://fortegrp.com",
+     "sameAs": [
+         "https://www.facebook.com/fortegroupinc/",
+         "https://twitter.com/ForteGrp",
+         "https://www.linkedin.com/company/fortegroup"
+     ]
+ }
     }); //end load
 
 })(jQuery);
