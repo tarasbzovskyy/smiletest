@@ -136,18 +136,7 @@
         }
 
         $(".product-tabs > .product-tab > .tab-pane").not(':first').removeClass('active');
-
- var ss = {
-     "@context": "http://schema.org",
-     "@type": "Person",
-     "name": "Steve Kreynin",
-     "url": "https://fortegrp.com",
-     "sameAs": [
-         "https://www.facebook.com/fortegroupinc/",
-         "https://twitter.com/ForteGrp",
-         "https://www.linkedin.com/company/fortegroup"
-     ]
- }
+        
     }); //end load
 
 })(jQuery);
