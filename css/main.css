@@ -1011,3 +1011,8 @@ select.form-control  {
     border:2px solid #eff0f3;
     padding-bottom:15px!important;
 }
+
+.buying-too .current-product .presents .interface  {
+    margin-top:0;
+    margin-left:0;
+}

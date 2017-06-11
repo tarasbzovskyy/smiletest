@@ -4,7 +4,7 @@
         slider.owlCarousel({
             items:items,
             margin:margin,
-            nav:false,
+            nav:true,
             touchDrag:true,
             dots:false,
             // navSpeed:1000,
