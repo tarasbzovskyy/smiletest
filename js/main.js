@@ -27,11 +27,11 @@
             }
         });
 
-        $('.slider-nav .next').on('click',function(){
-            $(slider).trigger('next.owl.carousel');
+        slider.parent().find('.slider-nav .next').on('click',function(){
+            slider.trigger('next.owl.carousel');
         });
-        $('.slider-nav .prev').on('click',function(){
-            $(slider).trigger('prev.owl.carousel');
+        slider.parent().find('.slider-nav .prev').on('click',function(){
+            slider.trigger('prev.owl.carousel');
         })
     }
 
@@ -93,12 +93,90 @@
         });
     };
 
+    function productFilter(){
+        var buttons = $('.filter-buttons li'),
+            slider = $('.product-filter .slides');
+
+        slider.owlCarousel({
+            items:5,
+            margin:10,
+            nav:false,
+            touchDrag:true,
+            mouseDrag: true,
+            dots:false,
+            // navSpeed:1000,
+            responsiveClass:true,
+            // responsiveRefreshRate:1000,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        }).removeClass('owl-loaded');
+
+        $('.product-filter .slider-nav .next').on('click',function(){
+             slider.trigger('next.owl.carousel');
+        });
+        $('.product-filter .slider-nav .prev').on('click',function(){
+            slider.trigger('prev.owl.carousel');
+        });
+        var data = buttons.data('filter');
+        if (buttons.parents('.product-filter').find('.slides li.'+ data).length) {
+            buttons.parents('.product-filter').find('.slides li').parent().fadeOut('fast');
+            buttons.parents('.product-filter').find('.slides li.'+ data).parent().delay(200).fadeIn('fast');
+
+        }
+
+        buttons.on('click', function(){
+            var filterBlock = $(this).parents('.product-filter'),
+                slider = filterBlock.find('.slides'),
+                data = $(this).data('filter');
+            buttons.removeClass('active');
+
+
+            if (!$(this).hasClass('active')) {
+                $(this).addClass('active');
+
+                if (filterBlock.find('.slides li.'+ data).length) {
+                    filterBlock.find('.slides li').parent().fadeOut('fast');
+                    filterBlock.find('.slides li.'+ data).parent().fadeIn('fast').css('display','inline-block');
+
+                }
+
+                slider.removeClass('.owl-loaded');
+                slider.show(function() {
+                    $(this).addClass('owl-loaded').trigger('refresh.owl.carousel');
+                });
+
+                slider.trigger('to.owl.carousel');
+
+
+
+            } else {
+                $(this).removeClass('active')
+            }
+
+        })
+
+    }
+
     $( document ).ready(function() {
         $(".product-tabs > .product-tab .tab-pane").addClass('active');
 
         $('.modal').modal();
 
         activeLightbox();
+
     }); //end ready
 
 
@@ -124,6 +202,8 @@
             });
 
         productSlider($(".product-slider .slides"),3,10,true);
+        productSlider($(".people-choosing .slides"),3,10,true);
+        productSlider($(".buying-too .slides"),6,0,true);
 
         productSlider($(".article-slide"),5, 0,false);
 
@@ -136,6 +216,8 @@
         }
 
         $(".product-tabs > .product-tab > .tab-pane").not(':first').removeClass('active');
+
+        productFilter()
         
     }); //end load
 

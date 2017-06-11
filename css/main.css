@@ -258,6 +258,17 @@ input:focus, textarea:focus, select:focus, input:active, textarea:active, select
     background-color:#fb2539;
     color:#fff;
 }
+.btn.btn-buy.btn-alert {
+    background-color:#fb2539;
+    color:#fff;
+    padding:13px 35px;
+    font-weight:800;
+    font-size:15px;
+}
+.btn.btn-buy.btn-alert:hover {
+    background-color:#fff;
+    color:#fb2539
+}
 .btn.huge {
     padding:16px 37px;
     font-weight:800;
@@ -619,13 +630,13 @@ i.interface.bigger, span.interface.bigger {
     font-size:12px;
     margin-right:10px;
 }
-.product-slider  {
+.product-slider, .slider-job,.people-choosing  {
     padding:10px;
 }
-.product-slider .product-price {
+.product-slider .product-price ,.slider-job .product-price, .people-choosing .product-price {
     font-size:30px;
 }
-.product-slider .product-price span {
+.product-slider .product-price span, .slider-job .product-price span, .people-choosing .product-price span {
     font-size:16px;
 }
 .old-price {
@@ -634,14 +645,14 @@ i.interface.bigger, span.interface.bigger {
     margin-left: 10px;
     display:inline-block;
 }
-.product-slider {
+.product-slider, .slider-job,.people-choosing {
     overflow-x:hidden;
 }
 
 .product-slider img {
     /*width:70%;*/
 }
-.product-slider .slides .owl-item{
+.product-slider .slides .owl-item, .slider-job .slides .owl-item, .people-choosing .slides .owl-item{
     display:inline-block;
     padding:0 20px;
 
@@ -910,6 +921,9 @@ i.interface.bigger, span.interface.bigger {
     display: flex;
 }
 
+.current-product {
+    padding: 25px 0;
+}
 .current-product .product-price,.current-product p  {
     color:#777777;
 }
@@ -926,4 +940,74 @@ i.interface.bigger, span.interface.bigger {
     width:145px;
     white-space: normal;
     line-height:1;
+}
+.current-product .interface {
+    vertical-align: top;
+    margin-top: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.product-avto {
+    background:#ddefe7;
+    padding:26px 30px;
+    margin:30px 0 10px;
+}
+.product-avto p {
+    font-weight:800;
+}
+.product-avto p span.interface{
+    margin-right:10px;
+    background-position:0 -147px;
+}
+select.form-control  {
+    border-radius:0;
+    border-color:#fff;
+    padding:10px 15px;
+    box-shadow: none!important;
+    -webkit-box-shadow: none;
+    height:auto;
+}
+.filter-buttons li{
+    padding:12px 15px;
+    border:1px solid #e1e1e1;
+    cursor:pointer;
+}
+.filter-buttons li.active {
+    border:1px solid #fb2539;
+}
+.filter-buttons .list-inline {
+    margin:0;
+}
+.similar-info .product-rate .interface {
+    margin-left:2px;
+    margin-top:0;
+}
+.similar-info.current-product {
+    padding:0;
+}
+.buyer-choosing {
+    margin-left:20px;
+}
+.buyer-choosing select{
+    border:1px solid #d5d3d3;
+}
+.buying-too .collapse-block .interface {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.buying-too .collapse-block {
+    position:static;
+    padding:8px 0;
+    width:auto;
+}
+.buying-too h3.title {
+    margin-right:15px;
+}
+
+.buying-too .owl-item {
+    border:2px solid #eff0f3;
+    padding-bottom:15px!important;
 }
