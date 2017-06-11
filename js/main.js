@@ -203,9 +203,15 @@
 
         productSlider($(".product-slider .slides"),3,10,true);
         productSlider($(".people-choosing .slides"),3,10,true);
-        productSlider($(".buying-too .slides"),6,0,true);
+        productSlider($(".buying-too .slides"),5,0,true);
 
-        productSlider($(".article-slide"),5, 0,false);
+        $('.buying-too .slider-nav').addClass('nav-vertical').prependTo('.buying-too .owl-stage-outer');
+        var height = parseFloat($('.owl-stage-outer').css('height'));
+
+        //$('.buying-too .slider-nav > div').css('height',height/2);
+        if (window.innerWidth > 1200) {
+            $('.buying-too .owl-item').css('width','240px');
+        }
 
         collapser($('.character'),5,true);
         if ($('#tab2').hasClass('active')) {

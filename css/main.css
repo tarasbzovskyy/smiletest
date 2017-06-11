@@ -46,7 +46,13 @@ body {
     font-size:13px;
     overflow-x:hidden;
 }
-
+a, button, .btn {
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
 h1 {
     font-size:34px;
 }
@@ -1016,3 +1022,112 @@ select.form-control  {
     margin-top:0;
     margin-left:0;
 }
+.buying-too .owl-stage-outer {
+    position:relative;
+    overflow:hidden;
+}
+.buying-too .slider-nav.nav-vertical {
+    width:45px;
+    position:absolute;
+    right:0;
+    z-index:2;
+    height:100%;
+}
+.buying-too .slider-nav.nav-vertical > div {
+    height:50%;
+    position:absolute;
+}
+.buying-too .slider-nav.nav-vertical > div.next {
+    right:0;
+    top:0;
+}
+.buying-too .slider-nav.nav-vertical > div.prev {
+    right:0;
+    bottom:0;
+}
+.buying-too .slider-nav.nav-vertical > div span {
+    position:absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%) ;
+    -moz-transform: translateY(-50%) ;
+    -ms-transform:  translateY(-50%);
+    -o-transform:  translateY(-50%);
+    transform:  translateY(-50%);
+}
+.buying-too  .product-rate .feedback {
+    margin:0;
+}
+.footer-links {
+    background-color:#474a4e;
+    padding:45px 0 20px;
+    width:80%;
+}
+.footer-links .column{
+    width:19%;
+    display:inline-block;
+}
+.footer-title {
+    color:#c8c9ca;
+    font-weight:800;
+}
+.footer-links li a {
+    color:#919295;
+
+}
+.footer-links li a:hover {
+    text-decoration:none;
+    color:#71747b;
+}
+.footer-links li {
+    padding:5px 0;
+}
+.footer-social, .footer-links {
+    float:left;
+}
+.footer-social {
+    width:20%;
+}
+footer .footer-links:before {
+    content: '';
+    background-color:#474a4e;
+    position:absolute;
+    left:0;
+    width:50%;
+    bottom:0;
+    top:0;
+    z-index:-1;
+}
+footer .footer-social:before {
+    content: '';
+    background-color:#3c3f43;
+    position:absolute;
+    right:0;
+    width:50%;
+    bottom:0;
+    top:0;
+    z-index:-1;
+}
+footer {
+    position:relative;
+}
+.copyright .made-by span{
+    font-weight:800;
+}
+.copyright {
+    overflow: hidden;
+    border-top: 1px solid #595c5f;
+    padding-top: 17px;
+    margin-right:20px;
+    color:#8f9093;
+}
+.footer-social .contacts {
+    display:table;
+    width:100%;
+    padding:45px 0 20px 50px;
+    margin:0 auto;
+    color: #d2d3d4;
+
+}
+.footer-social .contacts p {
+    color:#77797c;
+ }
