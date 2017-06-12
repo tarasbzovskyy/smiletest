@@ -224,6 +224,7 @@
         $(".product-tabs > .product-tab > .tab-pane").not(':first').removeClass('active');
 
         productFilter()
+        $('.preloader').fadeOut('fast');
         
     }); //end load
 
