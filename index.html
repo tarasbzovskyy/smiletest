@@ -41,7 +41,7 @@
                     <li class="active"><a href="#">Рус</a></li>
                     <li><a href="#">Укр</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-center client-city">
+                <ul class="nav navbar-nav navbar-center client-city visible-lg">
                     <li><a href="#">Ваш Город:</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Киев<span class="caret"></span></a>
@@ -66,16 +66,8 @@
         <div id="logo" class="navbar-brand">
             <a href="#"><img class="logo-main logo-reg" src="img/logo.png" alt="bez-avto-zvuk"></a>
         </div>
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle toggle-button" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar closing close-down"></span>
-                <span class="icon-bar closing close-hide"></span>
-                <span class="icon-bar closing close-up"></span>
-            </button>
-        </div>
 
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <nav class="" role="navigation">
             <div>
                 <ul class="nav navbar-nav search-section">
                     <form class="navbar-form" role="search">
@@ -87,15 +79,15 @@
                         </div>
                     </form>
                 </ul>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav  visible-lg">
                     <li class="phone-number">0-800-30-15-85<span class="caret"></span></li>
                     <li><button class="btn btn-warning btn-call">Обратный звонок</button></li>
                 </ul>
                 <ul class="nav navbar-nav user-menu">
-                    <li class="menu-item"><a href="#"><span class="menu-icon user-garage"></span>Гараж</a></li>
-                    <li class="menu-item"><a href="#"><i class="likes">1</i><span class="menu-icon user-bookmark"></span>Избраное</a></li>
-                    <li class="menu-item"><a href="#"><span class="menu-icon user-compare"></span>Сравнение</a></li>
-                    <li class="menu-item"><a href="#"><span class="menu-icon user-basket"></span>Корзина</a></li>
+                    <li class="menu-item  visible-lg"><a href="#"><span class="menu-icon user-garage"></span>Гараж</a></li>
+                    <li class="menu-item "><a href="#"><i class="likes">1</i><span class="menu-icon user-bookmark"></span>Избраное</a></li>
+                    <li class="menu-item  visible-lg"><a href="#"><span class="menu-icon user-compare"></span>Сравнение</a></li>
+                    <li class="menu-item  "><a href="#"><span class="menu-icon user-basket"></span>Корзина</a></li>
                 </ul>
             </div>
         </nav>
@@ -105,7 +97,39 @@
 <section class="main-menu row">
     <div class="container">
         <ul class="nav navbar-nav">
-            <li class="menu-item"><a href="#">Каталог товаров<span class="menu-icon goods"></span></a></li>
+            <li class="menu-item dropdown catalogue">
+                <a class="dropdown-toggle catalogue-button" data-toggle="dropdown" href="#">Каталог товаров<span class="menu-icon goods"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#" class="title"><span class="interface small"></span>Масло</a>
+                            <ul class="list-unstyled">
+                                <li><a href="#">CASTRO Manual</a></li>
+                                <li><a href="#">CASTRO Manual</a></li>
+                                <li><a href="#">CASTRO Manual</a></li>
+                                <li><a href="#">CASTRO Manual</a></li>
+                            </ul>
+
+                    </li>
+                    <li>
+                        <a href="#" class="title"><span class="interface small"></span>Масло</a>
+                        <ul class="list-unstyled">
+                            <li><a href="#">CASTRO Manual</a></li>
+                            <li><a href="#">CASTRO Manual</a></li>
+                            <li><a href="#">CASTRO Manual</a></li>
+                            <li><a href="#">CASTRO Manual</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="title"><span class="interface small"></span>Масло</a>
+                        <ul class="list-unstyled">
+                            <li><a href="#">CASTRO Manual</a></li>
+                            <li><a href="#">CASTRO Manual</a></li>
+                            <li><a href="#">CASTRO Manual</a></li>
+                            <li><a href="#">CASTRO Manual</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
             <li class="menu-item visible-lg"><a href="#"><span class="menu-icon sales"></span>Акции</a></li>
             <li class="menu-item visible-lg"><a href="#"><span class="menu-icon compare-tests"></span>Сравнительные тесты</a></li>
             <li class="menu-item visible-lg"><a href="#"><span class="menu-icon how-choose"></span>Как выбрать</a></li>
@@ -133,9 +157,9 @@
         <div class="clearfix"></div>
 
         <div class="row space-top-30">
-            <div class="col-md-5">
+            <div class="col-md-5 space-bottom-20">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-5 clearfix">
                         <div class="product-photo-thumbs">
                             <ul class="slides">
                                 <li><img src="img/oil.png"></li>
@@ -1289,7 +1313,7 @@
 <div class="row">
     <div class="container">
         <div class="footer-links">
-            <div class="column">
+            <div class="column width-50">
                 <p class="footer-title space-bottom-20">Каталог</p>
                 <ul class="list-unstyled">
                     <li><a href="#" >Электроника</a></li>
@@ -1302,7 +1326,7 @@
                     <li><a href="#" >Запчасти и расходники</a></li>
                 </ul>
             </div>
-            <div class="column">
+            <div class="column width-50">
                 <p class="footer-title space-bottom-20">Каталог</p>
                 <ul class="list-unstyled">
                     <li><a href="#" >Электроника</a></li>
@@ -1315,7 +1339,7 @@
                     <li><a href="#" >Запчасти и расходники</a></li>
                 </ul>
             </div>
-            <div class="column">
+            <div class="column width-50">
                 <p class="footer-title space-bottom-20">Каталог</p>
                 <ul class="list-unstyled">
                     <li><a href="#" >Электроника</a></li>
@@ -1328,7 +1352,7 @@
                     <li><a href="#" >Запчасти и расходники</a></li>
                 </ul>
             </div>
-            <div class="column">
+            <div class="column width-50">
                 <p class="footer-title space-bottom-20">Каталог</p>
                 <ul class="list-unstyled">
                     <li><a href="#" >Электроника</a></li>
@@ -1341,7 +1365,7 @@
                     <li><a href="#" >Запчасти и расходники</a></li>
                 </ul>
             </div>
-            <div class="column">
+            <div class="column width-50">
                 <p class="footer-title space-bottom-20">Каталог</p>
                 <ul class="list-unstyled">
                     <li><a href="#" >Электроника</a></li>

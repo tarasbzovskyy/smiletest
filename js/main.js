@@ -173,7 +173,7 @@
     $( document ).ready(function() {
         $(".product-tabs > .product-tab .tab-pane").addClass('active');
 
-        $('.modal').modal();
+        // $('.modal').modal();
 
         activeLightbox();
 

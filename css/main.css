@@ -314,35 +314,37 @@ section.main-menu {
     flex-wrap: nowrap;
     width:100%
 }
-.main-menu > div > ul li {
+.main-menu > div > ul > li.catalogue {
+    border-right:none;
+}
+.main-menu > div > ul > li {
     flex-wrap: nowrap;
     text-align:center;
     border-right:1px solid #5a5e63;
     width:20%;
 }
-.main-menu > div > ul li:hover a{
+.main-menu > div > ul > li:hover > a.catalogue-button{
     background-color:#64686f;
 }
-.main-menu > div > ul li:first-child a{
+.main-menu > div > ul > li:first-child a.catalogue-button{
     background-color: #fb2539;
 }
-.main-menu > div > ul li:first-child a:hover {
+.main-menu > div > ul > li:first-child a.catalogue-button:hover {
     background-color:#e40004;
 }
-
-.main-menu > div > ul li:first-child {
+.main-menu > div > ul > li.catalogue {
     width:235px;
     border-right:none;
     text-align:left;
 }
 
-.main-menu > div > ul li:first-child a{
+.main-menu > div > ul > li:first-child a.catalogue-button{
     text-transform: none;
     padding:20px;
     font-size: 16px;
     position:relative;
 }
-.main-menu > div > ul li:first-child a span{
+.main-menu > div > ul >li:first-child a.catalogue-button span{
     position:absolute;
     right:10px;
     width:20px;
@@ -352,7 +354,7 @@ section.main-menu {
     background:transparent;
     color:#fb2539;
 }
-.main-menu > div > ul li a{
+.main-menu > div > ul > li > a{
     color:#fff;
     font-weight: 400;
     text-transform: uppercase;
@@ -459,6 +461,12 @@ i.interface.bigger, span.interface.bigger {
 }
 .title-block .good-id {
     margin-top:25px;
+}
+.product-photo li img {
+    width:100%;
+}
+.product-photo {
+    margin-top:20%;
 }
 .product-photo-thumbs img {
     width:50px;
@@ -1086,29 +1094,22 @@ select.form-control  {
 }
 .footer-social {
     width:20%;
-}
-footer .footer-links:before {
-    content: '';
-    background-color:#474a4e;
-    position:absolute;
-    left:0;
-    width:50%;
-    bottom:0;
-    top:0;
-    z-index:-1;
-}
-footer .footer-social:before {
-    content: '';
     background-color:#3c3f43;
-    position:absolute;
-    right:0;
-    width:50%;
-    bottom:0;
-    top:0;
-    z-index:-1;
 }
 footer {
+    overflow: hidden;
     position:relative;
+    background: -moz-linear-gradient(360deg, rgba(71,74,78,1) 0%, rgba(71,74,78,1) 50%, rgba(60,63,67,1) 51%, rgba(60,63,67,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(71,74,78,1)), color-stop(50%, rgba(71,74,78,1)), color-stop(51%, rgba(60,63,67,1)), color-stop(100%, rgba(60,63,67,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(360deg, rgba(71,74,78,1) 0%, rgba(71,74,78,1) 50%, rgba(60,63,67,1) 51%, rgba(60,63,67,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(360deg, rgba(71,74,78,1) 0%, rgba(71,74,78,1) 50%, rgba(60,63,67,1) 51%, rgba(60,63,67,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(360deg, rgba(71,74,78,1) 0%, rgba(71,74,78,1) 50%, rgba(60,63,67,1) 51%, rgba(60,63,67,1) 100%); /* ie10+ */
+    background: linear-gradient(90deg, rgba(71,74,78,1) 0%, rgba(71,74,78,1) 50%, rgba(60,63,67,1) 51%, rgba(60,63,67,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#474a4e', endColorstr='#3c3f43',GradientType=1 ); /* ie6-9 */
+}
+footer > .row {
+    position:relative;
+    overflow:hidden;
 }
 .copyright .made-by span{
     font-weight:800;
@@ -1131,3 +1132,52 @@ footer {
 .footer-social .contacts p {
     color:#77797c;
  }
+.catalogue .dropdown-menu > li {
+    display:inline-block;
+    text-align:left;
+    border-left:none;
+    position:relative;
+    margin-right: 30px;
+
+}
+.main-menu .catalogue .dropdown-menu > li > a .interface {
+    background-position: 2px -60px;
+}
+.main-menu .catalogue .dropdown-menu > li > a:hover {
+    background-color:#fff;
+}
+.main-menu .catalogue .dropdown-menu > li > a {
+    background-color:#fff!important;
+    padding: 4px 15px 6px 11px;
+    font-weight:800;
+    color:#fb2539!important;
+}
+
+.main-menu .catalogue .dropdown-menu > li > ul li {
+    width:100%;
+}
+.catalogue .dropdown-menu {
+    padding:20px;
+    border:1px solid #fb2539;
+    width:100%;
+    border-radius: 0;
+}
+.catalogue.dropdown {
+    position:static;
+
+}
+.main-menu .nav.navbar-nav {
+    position:relative;
+}
+.main-menu .catalogue ul li {
+    border:none;
+}
+.dropdown-menu .title {
+    font-size:15px;
+}
+.main-menu .catalogue ul li ul a{
+    color:#333333;
+}
+.main-menu .catalogue ul li ul {
+    padding-left:25px;
+}
